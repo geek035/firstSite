@@ -1,0 +1,95 @@
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    --logoSize: calc(512px / 7);
+
+    padding-top: 1em;
+    padding-left: 1em;
+
+    width: 100%;
+    height: 10vh;
+}
+
+header .logo {
+    width: var(--logoSize);
+    height: var(--logoSize);
+
+    background: radial-gradient(black 60%, rgb(0, 0, 0, 0) 73%);
+}
+
+header .logo img {
+    position: relative;
+    height: 100%;
+
+    transform: rotate(var(--rotationLogo));
+    will-change: auto;
+
+}
+
+@keyframes collapseList {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes expandList {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+header nav {
+    position: relative;
+    width: 50%;    
+    height: calc(var(--logoSize) / 2);
+    right: 1vw;
+    z-index: -1;
+
+
+    overflow: hidden;
+    
+    color: white;
+    
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    background: linear-gradient(to right, black 50%, rgb(0, 0, 0, 0));
+
+    list-style: none;
+}
+
+header nav ul li {
+    padding-left: 1em;    
+}
+
+.collapsedNavList{
+    animation-duration: 2s;
+    animation-name: collapseList;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@media (max-width: 1400px) {
+    header {
+        --logoSize: calc(512px / 9);
+    }
+}
+
+@media (max-width: 990px) {
+    header {
+        --logoSize: calc(512px / 10);
+    }
+}

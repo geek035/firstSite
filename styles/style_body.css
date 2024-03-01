@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Tana Uncial SP";
+    src: url("../fonts/TANAUNCIALSP.OTF");
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    box-sizing: border-box;
+
+    font-size: calc(0.5em + 0.8vw);
+    font-family: "Tana Uncial SP";
+
+    --textColor: rgb(57, 40, 19);
+    --mainHeaderSize: 2.2em;
+}
+
+*, 
+::after, 
+::before {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;   
+}
+
+
+body {
+    color: var(--textColor);
+
+    height: 3000px;
+}
