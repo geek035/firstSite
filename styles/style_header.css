@@ -2,6 +2,7 @@ header {
     position: fixed;
     display: flex;
     align-items: center;
+    z-index: 10;
 
     --logoSize: calc(512px / 7);
 
@@ -16,7 +17,11 @@ header .logo {
     width: var(--logoSize);
     height: var(--logoSize);
 
-    background: radial-gradient(black 60%, rgb(0, 0, 0, 0) 73%);
+    background: radial-gradient(rgb(39, 23, 15) 60%, rgb(0, 0, 0, 0) 73%);
+}
+
+header .logo:hover {
+    background: radial-gradient(rgb(99, 69, 32) 60%, rgb(0, 0, 0, 0) 73%);
 }
 
 header .logo img {
@@ -66,7 +71,7 @@ header nav ul{
 
     height: 100%;
 
-    background: linear-gradient(to right, black 50%, rgb(0, 0, 0, 0));
+    background: linear-gradient(to right, rgb(39, 23, 15) 50%, rgb(0, 0, 0, 0));
 
     list-style: none;
 }

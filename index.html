@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <meta name="description" content="d&d game page with world's and characters's description 
         and their adventure's storyline">
     <meta name="keywords" content="d&d, dnd, rollplay, story, game">
     <meta name="author" content="Кудрявцев Савва">
-    
+
     <link href="styles/style_body.css" rel="stylesheet" type="text/css" />
     <link href="styles/style_header.css" rel="stylesheet" type="text/css" />
     <link href="styles/style_parallax.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style_main.css" rel="stylesheet" type="text/css" />
 
-    <script src="scripts/script.js" defer></script>    
-    
+    <script src="scripts/script.js" defer></script>
+
     <title>d&d - мир Эденории</title>
 
 
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -27,22 +30,76 @@
         </div>
         <nav>
             <ul>
-                <li class="li_logo_1">1 итем</li>
-                <li class="li_logo_2">2 итем</li>
-                <li class="li_logo_3">3 итем</li>
-                <li class="li_logo_4">4 итем</li>
+                <li class="li_logo_1"><a href="">Лор</a></li>
+                <li class="li_logo_2"><a href="">Персонажи</a></li>
+                <li class="li_logo_3"><a href="">Локации</a></li>
             </ul>
         </nav>
     </header>
-    
-    <div class="body_upper_layer">
-        <div class="layer_back_img"><h1 class="welcome_title">Добро пожаловать в Эденорию</h1></div>
-        <div class="layer_middle_img"></div>
-        <div class="layer_front_img"></div>
+
+    <div class="wrapper welcome-part">
+        <div class="layer_back_img" style="background-image: url(../images/first_img_back.png);">
+            <h1 class="welcome_title">Добро пожаловать в Эденорию</h1>
+        </div>
+        <div class="layer_middle_img" style="background-image: url(../images/first_img_middle.png);"></div>
+        <div class="layer_front_img" style="background-image: url(../images/first_img_front.png);"></div>
     </div>
 
-    <!--<h1 class="welcome_title">Добро пожаловать в мир <br> Эденории</h1>-->
-    
+    <div class="wrapper middle-part">
+        <div class="layer_back_img" style="background-image: url(../images/second_img_bg.jpg);"></div>
+        <main>
+            <div>
+                <div class="wrapper-text-box">
+                    <div class="text-box">
+                        <p>
+                            Безграничные долины, горы, познавшие время первых прародителей и их братья - меньшие
+                            -
+                            долины
+                            причудливых форм. Подземелья глубины до самого Ада и небесные дворцы, красота
+                            которых
+                            ослепляет в прекрасный солнечный день. Это мир множества существ: люди, эльфы и
+                            дварфы,
+                            полурослики и гоблины, орки, тролли. Их количества не счесть, а те, кто попытался,
+                            потерял
+                            рассудок, узнав о некоторых.
+                        </p>
+                    </div>
+                    <div class="text-box">
+                        <p>
+                            Края мира сего - долины, покрытые пеплом и осажденные драконами самых разных
+                            размеров и
+                            форм. Их история началась еще до времен Великой битвы божеств и продолжается в
+                            настоящем,
+                            втором периоде Восстановления. Но какими бы ужасными не были драконы, разумные
+                            существа,
+                            границы сил которых не известны даже самым мудрым из всех ученых Академии Эа,
+                            вызывают
+                            больший страх у любого, чей уровень ниже полубожественного.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-box">
+                    <p>
+                        Этот мир опасен, а его будущее никогда не будет определено. Здесь каждый борется за место
+                        под солнцем. Это мир Эденория: самый красивый из всех, что существует во Вселенной.
+                    </p>
+                </div>
+            </div>
+
+            <div class="img-box">
+                <img class="characters" src="images/elf.png" alt="Геласса" title="Геласса">
+            </div>
+
+        </main>
+    </div>
+
+    <div class="wrapper">
+        <div class="general_layer">
+            <div class="layer_back_img" style="background-image: url(../images/fird_img_bg.jpg);">
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

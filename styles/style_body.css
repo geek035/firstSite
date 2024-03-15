@@ -11,7 +11,8 @@
     font-size: calc(0.5em + 0.8vw);
     font-family: "Tana Uncial SP";
 
-    --textColor: rgb(57, 40, 19);
+    --textColor: rgb(57, 34, 13);
+    --index: calc(1vh + 1vw);
     --mainHeaderSize: 2.2em;
 }
 
@@ -27,6 +28,14 @@
 
 body {
     color: var(--textColor);
+}
 
-    height: 3000px;
+body a {
+    color: rgb(198, 149, 80);
+    text-decoration: none;
+}
+
+body li>a:hover {
+    color: rgb(146, 105, 49);
+    text-decoration: underline;
 }
