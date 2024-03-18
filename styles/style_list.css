@@ -1,0 +1,38 @@
+.final-part {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+
+    overflow-y: hidden;
+}
+
+.characters-list {
+    grid-column: 2;
+
+    height: 50%;
+    width: 80%;
+    
+    overflow-x: hidden;
+
+    list-style: none;
+}
+
+.arcticle-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow-x: visible;
+
+    will-change: auto;
+    transform: translate3d(var(--scrollList), 0, 0);
+}
+
+.arcticle-wrapper article{
+    flex: 1 0 auto;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+}

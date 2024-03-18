@@ -1,60 +1,69 @@
-main {
-    display: grid;
-    
-    grid-template-columns: 2fr 1fr;
-
+.middle-part {
     width: 100%;
-    height: 100%;
-
-    will-change: auto;
-    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+    height: 150vh;
+}
+.middle-part .layer_back_img {
+    width: 100%;
+    height: 150vh;
 }
 
-main>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.middle-part .layer_middle_img {
+    width: 100%;
+    height: 120vh;
+
+    background-image: 100% 100%;
+    transform: translate3d(0, calc(var(--scrollTop) / 7), 0);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
     align-items: center;
 
     width: 100%;
-    height: 100%;
-}
+    height: 150vh;
 
-.wrapper-text-box {
-    display: flex;
+    font-size: calc(var(--index));
 }
 
 .text-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    background: radial-gradient(rgba(206, 186, 135, 0.4) 40%, rgba(251, 225, 107, 0) 73%);
-}
-
-main p {
-    padding: 1em;
+    
     text-align: center;
+    text-transform: uppercase;
 }
 
-.img-box {
-    display: flex;
-
-    width: 100%;
-    height: 100%;
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
+.text-box h2 {
+    color: rgb(30, 29, 28);
+    padding: 1em;
 }
 
-main img {
-    width: 80%;
-    height: 80%;
+.main-text-box {
+    grid-column: 2; 
+    background: radial-gradient( rgba(17, 17, 17, 0.7) 30%,  rgba(0, 0, 0, 0) 70%);
+}
 
-    padding: 0.5em;
+.middle-part::after {
+    bottom: -160vh;
+    --height-transition: calc(337px / 3);
+    height: var(--height-transition);
+    background-image: url("../images/mid_transition.png");
+    background-size: 100% var(--height-transition);
+}
 
+@media (min-width: 2000px) {
+    .middle-part::after {
+        bottom: -157vh;
+        --height-transition: calc(337px / 2);
+    }
+}
+
+@media (max-width: 1200px) {
+    .middle-part::after {
+        bottom: -157vh;
+        --height-transition: calc(337px / 2);
+    }
 }
