@@ -47,8 +47,8 @@ main {
 }
 
 .middle-part::after {
-    bottom: -160vh;
-    --height-transition: calc(337px / 3);
+    bottom: -170vh;
+    --height-transition: calc(337px / 1.5);
     height: var(--height-transition);
     background-image: url("../images/mid_transition.png");
     background-size: 100% var(--height-transition);
@@ -56,8 +56,20 @@ main {
 
 @media (min-width: 2000px) {
     .middle-part::after {
-        bottom: -157vh;
-        --height-transition: calc(337px / 2);
+        bottom: -162vh;
+        --height-transition: calc(337px / 1);
+    }
+}
+
+@media (max-width: 2000px) {
+    .middle-part::after {
+        bottom: -160vh;
+    } 
+}
+
+@media (max-height: 1200px) {
+    .middle-part::after {
+        bottom: -170vh;
     }
 }
 
